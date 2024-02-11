@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Главная {% endblock title %}
+
+{% block content %}
+    <div class="features">
+        <h1>Главная страница</h1>
+        <p>Мы создали ресурс для удобного просмотра, интересующих вас новостей из мира баскетбола. <br>
+            Здесь собраны самые главные и интригующий события произошедшие в NBA и за её пределами, <br>
+            а также статистика игроков и их команд.</p>
+        <a href="{% url 'news_home' %}"><button class="btn btn-warning">Перейти к новостям</button></a>
+    </div>
+{% endblock content %}
+
